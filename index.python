@@ -49,7 +49,6 @@ class Mahasiswa(Manusia):
         
 # Membuat objek dari kelas Mahasiswa 
 mahasiswa1 = Mahasiswa("Imelda Cyntia", 18, "Informatika", "Bengkulu")
-
 # Memanggil metode-metode yang ada di dalam objek
 mahasiswa1.berbicara()
 mahasiswa1.pendidikan()
