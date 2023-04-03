@@ -31,25 +31,26 @@ print(angka_double)
 print("\n")
 #OOP
 class Manusia:
-    def __init__(self, nama, umur):
-        self.nama = nama
-        self.umur = umur
+    def _init_(diri, nama, umur):
+        diri.nama = nama
+        diri.umur = umur
 
-    def berbicara(self):
-        print("Halo, perkenalkan nama saya", self.nama, "dan umur saya", self.umur, "tahun")
+    def berbicara(diri):
+        print("Halo, perkenalkan nama saya", diri.nama, "dan umur saya", diri.umur, "tahun")
 
 class Mahasiswa(Manusia):
-    def __init__(self, nama, umur, jurusan):
-        super().__init__(nama, umur)
-        self.jurusan = jurusan
+    def _init_(diri, nama, umur, jurusan, universitas):
+        super()._init_(nama, umur)
+        diri.jurusan = jurusan
+        diri.universitas = universitas
 
-    def belajar(self):
-        print("\nSaya sedang menempuh pendidikan S-1 di jurusan", self.jurusan)
+    def pendidikan(diri):
+        print("\nSaya sedang menempuh pendidikan S-1 di jurusan", diri.jurusan, "Pada Universitas", diri.universitas)
 
 
 # Membuat objek dari kelas Mahasiswa 
-mahasiswa1 = Mahasiswa("Imelda Cyntia", 18, "Informatika")
+mahasiswa1 = Mahasiswa("Imelda Cyntia", 18, "Informatika", "Bengkulu")
 
 # Memanggil metode-metode yang ada di dalam objek
 mahasiswa1.berbicara()
-mahasiswa1.belajar()
+mahasiswa1.pendidikan()
