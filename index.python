@@ -46,8 +46,7 @@ class Mahasiswa(Manusia):
 
     def pendidikan(diri):
         print("\nSaya sedang menempuh pendidikan S-1 di jurusan", diri.jurusan, "Pada Universitas", diri.universitas)
-
-
+        
 # Membuat objek dari kelas Mahasiswa 
 mahasiswa1 = Mahasiswa("Imelda Cyntia", 18, "Informatika", "Bengkulu")
 
